@@ -10,6 +10,9 @@ body {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 7px;
 }
+#text{
+  font-size: 60px;
+}
 
 .text1 {
   position: relative;
@@ -35,3 +38,21 @@ body {
      margin-top: 120px;
      width: 17%;
 }
+
+#yellow, #purple {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  margin:15px;
+   }
+
+  #yellow{
+    background-color:yellow;
+  }
+
+  #purple{
+    background-color:rebeccaPurple;
+  }
+  form{
+    padding: 50px;
+  }

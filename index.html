@@ -13,23 +13,44 @@
     />
     <title>Kodluyoruz Javascript Saat Ödevi</title>
   </head>
-  <body class="bg-dark" onload="showTime()">
-    <div class="text-center">
-      <img
-        src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
-        alt=""
-        class="rounded"
-      />
-      <div class="text1 text-center">
-        Merhaba, <strong><span id="myName"></span></strong>! Hoş geldin!
-      </div>
-      <div id="myClock" class="clock">00</div>
-      <div class="text2 text-center">
-        tarihinde
-        <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
-        Javascript bölümü 1. Ödevindesiniz.
+  <body>
+    <div id="alert" class="col-sm-6"></div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+            <form action="" id="userForm">
+              <div class="mb-3">
+                <label for="username" class="form-label">Kullanıcı Adı</label>
+                <input type="text" class="form-control" name="username" id="username">
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">Not Bilgisi</label>
+                <input type="number" class="form-control" name="score" id="score">
+              </div>
+              <div class="mb-3">
+                <button type="reset" class="btn btn-danger btn-sm">Temizle</button>
+                <button type="submit" class="btn btn-success btn-sm">Gönder</button>
+              </div>
+              
+            </form>
+        </div>
+        <div class="col-sm-8 offset-sm-2">
+          <ul class="list-group list-group-numbered" id="userList">
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                
+                Content for list item
+              </div>
+               <span class="badge bg-primary rounded-pill">14</span>
+            </li> -->
+            
+          </ul>
+        </div>
       </div>
     </div>
+  
+
     <script src="js/clock.js"></script>
+    <script src="js/odev2.js"></script>
   </body>
 </html>
